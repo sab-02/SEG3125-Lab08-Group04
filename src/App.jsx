@@ -18,7 +18,7 @@ function App() {
       <Sidebar setPage={setPage} current={page} />
 
       <div className="content">
-        {page === "dashboard" && <Dashboard />}
+        {page === "dashboard" && <Dashboard setPage={setPage} />}
         {page === "tasks" && <Tasks />}
       </div>
     </div>

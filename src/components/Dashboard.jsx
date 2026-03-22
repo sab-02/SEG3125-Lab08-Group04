@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Dashboard() {
+export default function Dashboard({ setPage }) {
   const [tasks, setTasks] = useState([
     { text: "Review calculus notes", done: true },
     { text: "Read Chapter 5", done: false },
@@ -42,10 +42,14 @@ export default function Dashboard() {
         <div className="card">
           <h3>Weekly Study Progress</h3>
           <div className="progress-circle">68%</div>
-          <button className="primary">+ Quick Add Task</button>
+          <button
+              className="primary"
+              onClick={() => setPage("tasks")}>
+              + Quick Add Task
+          </button>
         </div>
 
-        {/* ✅ ONLY THIS SECTION CHANGED */}
+        
         <div className="card full">
           <h3>Today's Study Tasks</h3>
 
