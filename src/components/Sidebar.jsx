@@ -25,7 +25,12 @@ export default function Sidebar({ setPage, current }) {
         >
           Calendar
         </li>
-        <li>Study Timer</li>
+        <li
+        className={current === "timer" ? "active" : ""}
+        onClick={() => setPage("timer")}
+        >
+          Study Timer
+        </li>
         <li>Progress</li>
         <li>Settings</li>
       </ul>
