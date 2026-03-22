@@ -1,0 +1,276 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f8f9fc;
+  color: #1a1a1a;
+}
+
+/* UTILITIES */
+.hidden {
+  display: none;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* LOGIN */
+.login-card {
+  width: 360px;
+  padding: 32px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #4f6df5, #9b3df5);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.link {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+/* APP LAYOUT */
+#app {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: white;
+  height: 100vh;
+  padding: 24px 16px;
+  border-right: 1px solid #f1f3f6;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar li:hover {
+  background: #f3f4f6;
+}
+
+.sidebar li.active {
+  background: linear-gradient(90deg, #4f6df5, #9b3df5);
+  color: white;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0,0.04),
+    0 8px 24px rgba(0,0,0,0.06);
+}
+
+.full {
+  grid-column: span 2;
+}
+
+/* DEADLINES */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f3f6;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+/* BADGES */
+.high {
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.medium {
+  background: #fef3c7;
+  color: #d97706;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.low {
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+/* PROGRESS CIRCLE (fake but styled) */
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#7c3aed 68%, #e5e7eb 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+/* BUTTON */
+.primary {
+  margin-top: 12px;
+}
+
+/* CHECKLIST */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  margin-top: 12px;
+}
+
+.fill {
+  height: 100%;
+  width: 40%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f6df5, #9b3df5);
+}
+
+/* TASK PAGE */
+.tabs {
+  margin-bottom: 16px;
+}
+
+.tabs button {
+  background: #f3f4f6;
+  color: #111;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #4f6df5;
+  color: white;
+}
+
+.task-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.task-card strong {
+  font-size: 15px;
+}
+
+.task-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
