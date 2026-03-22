@@ -408,3 +408,115 @@ label {
   background: #e5e7eb;
   color: #111;
 }
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+.add-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.nav-btn {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  opacity: 0.9;
+}
+
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.calendar-cell.disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.weekday-row {
+  margin-bottom: 10px;
+}
+
+.day-header {
+  text-align: center;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.calendar-cell {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  min-height: 100px;
+  cursor: pointer;
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.event {
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.event.study {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.event.assignment {
+  background: #fee2e2;
+  color: #dc2626;
+}

@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Tasks from "./components/Tasks";
 import Login from "./components/Login";
+import Calendar from "./components/Calendar";
 import "./index.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <div className="content">
         {page === "dashboard" && <Dashboard setPage={setPage} />}
         {page === "tasks" && <Tasks />}
+        {page === "calendar" && <Calendar />}
       </div>
     </div>
   );
