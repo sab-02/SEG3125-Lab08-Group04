@@ -7,6 +7,7 @@ import Calendar from "./components/Calendar";
 import StudyTimerPage from "./components/StudyTimerPage";
 
 import "./index.css";
+import Settings from "./components/Settings";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -24,7 +25,6 @@ function App() {
         {page === "dashboard" && <Dashboard setPage={setPage} />}
         {page === "tasks" && <Tasks />}
         {page === "calendar" && <Calendar />}
-        {page === "timer" && <StudyTimerPage />}
       </div>
     </div>
   );
