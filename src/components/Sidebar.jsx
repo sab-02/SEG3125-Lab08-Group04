@@ -27,7 +27,12 @@ export default function Sidebar({ setPage, current }) {
         </li>
         <li>Study Timer</li>
         <li>Progress</li>
-        <li>Settings</li>
+        <li
+          className={current === "settings" ? "active" : ""}
+          onClick={() => setPage("settings")}
+        >
+          Settings
+        </li>
       </ul>
     </div>
   );

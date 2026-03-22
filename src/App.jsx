@@ -5,6 +5,7 @@ import Tasks from "./components/Tasks";
 import Login from "./components/Login";
 import Calendar from "./components/Calendar";
 import "./index.css";
+import Settings from "./components/Settings";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         {page === "dashboard" && <Dashboard setPage={setPage} />}
         {page === "tasks" && <Tasks />}
         {page === "calendar" && <Calendar />}
+        {page === "settings" && <Settings />}
       </div>
     </div>
   );
