@@ -69,7 +69,6 @@ export default function StudyTimerPage() {
         .timer-page {
           min-height: 100vh;
           background: #f7f8fb;
-          padding: 20px;
         }
 
         .timer-shell {
@@ -95,7 +94,7 @@ export default function StudyTimerPage() {
           border: 1px solid #e5e7eb;
           border-radius: 24px;
           box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
-          padding: 24px;
+          padding: 20px;
         }
 
         .timer-page button {

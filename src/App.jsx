@@ -25,6 +25,8 @@ function App() {
         {page === "dashboard" && <Dashboard setPage={setPage} />}
         {page === "tasks" && <Tasks />}
         {page === "calendar" && <Calendar />}
+        {page === "timer" && <StudyTimerPage />}
+        {page === "settings" && <Settings />}
       </div>
     </div>
   );
